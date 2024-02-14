@@ -9,7 +9,6 @@ import {
 } from './styles'
 import { Text } from '../Text'
 
-import { products } from '../../assets/mocks/products'
 import { formatCurrency } from '../../utils/formatCurrency'
 import { ProductModal } from '../ProductModal'
 import { useState } from 'react'
@@ -17,9 +16,10 @@ import { Product } from '../../types/Product'
 
 interface MenuProps {
 	onAddToCart: (product: Product) => void
+	products: Product[]
 }
 
-export function Menu({ onAddToCart }: MenuProps) {
+export function Menu({ onAddToCart, products }: MenuProps) {
 	const [isModalVisible, setisModalVisible] = useState(false)
 	const [selectedProduct, setSelectedProduct] = useState<null | Product>(null)
 
@@ -52,12 +52,12 @@ export function Menu({ onAddToCart }: MenuProps) {
 							<Text weight="600">{product.name}</Text>
 							<Text
 								color="#666"
-								size={14}
+								size="14px"
 								style={{ marginVertical: 8 }}>
 								{product.description}
 							</Text>
 							<Text
-								size={14}
+								size="14px"
 								weight="600">
 								{formatCurrency(product.price)}
 							</Text>
