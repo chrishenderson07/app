@@ -1,18 +1,39 @@
 export const products = [
 	{
-		_id: '65c4a9902a8964dcea31c2d8',
-		name: 'Produto 1',
-		price: 10.99,
-		description: 'Descrição do Produto 1',
-		imagePath: '1707387280288-coca-cola.png',
+		_id: '6372e040f52e37ef85fe2c5e',
+		name: 'Pizza quatro queijos',
+		description: 'Deliciosa pizza quatro queijos com borda simples',
+		imagePath: '1680203456991-quatro-queijos.png',
+		price: 40,
+		ingredients: [
+			{
+				name: 'Mussarela',
+				icon: '🧀',
+				_id: '6372e040f52e37ef85fe2c5f',
+			},
+			{
+				name: 'Parmesão',
+				icon: '🧀',
+				_id: '6372e040f52e37ef85fe2c60',
+			},
+			{
+				name: 'Gouda',
+				icon: '🧀',
+				_id: '6372e040f52e37ef85fe2c61',
+			},
+			{
+				name: 'Brie',
+				icon: '🧀',
+				_id: '6372e040f52e37ef85fe2c62',
+			},
+		],
 	},
 	{
-		_id: '65c0b639a22391f7ca98a145',
-		name: 'Produto 2',
-		price: 15.99,
-		description: 'Descrição do Produto 2',
-		imagePath: '1707387280288-coca-cola.png',
+		_id: '6372e276a381106c0f854cb3',
+		name: 'Coca cola',
+		description: 'Coca cola lata geladinha topzera',
+		imagePath: '1680275179782-coca-cola.png',
+		price: 7,
+		ingredients: [],
 	},
-
-	// Adicione mais objetos de produto aqui, se necessário
 ]
